@@ -2,6 +2,7 @@
 using MongoDB.Driver;
 using multishop.catalog.Dtos.CategoryDtos;
 using multishop.catalog.entities;
+using multishop.catalog.Settings;
 
 namespace multishop.catalog.Services.CategoryServices
 {
@@ -10,6 +11,12 @@ namespace multishop.catalog.Services.CategoryServices
 		private readonly IMongoCollection<Category>? _categoryCollection;
 
 		private readonly IMapper? _mapper;
+
+		public CategoryService(IMapper? mapper , IDatabaseSettings _databaseSettings)
+		{
+			_mapper = mapper;
+		}
+
 		Task ICategoryService.CreateCategoryAsync(CreateCategoryDto createCategoryDto)
 		{
 			throw new NotImplementedException();
