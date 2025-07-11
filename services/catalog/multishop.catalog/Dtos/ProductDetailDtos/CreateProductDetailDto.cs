@@ -1,4 +1,5 @@
-﻿namespace multishop.catalog.Dtos.ProductDetail
+﻿namespace multishop.catalog.Dtos.ProductDetailDtos
+{ 
 	public class CreateProductDetailDto
 	{
 		public string? ProductDescription { get; set; }

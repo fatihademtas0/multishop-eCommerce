@@ -1,7 +1,6 @@
 ﻿
 using AutoMapper;
 using MongoDB.Driver;
-using multishop.catalog.Dtos.ProductDetail;
 using multishop.catalog.Dtos.ProductDetailDtos;
 using multishop.catalog.entities;
 using multishop.catalog.Settings;
@@ -18,7 +17,7 @@ namespace multishop.catalog.Services.ProductDetailServices
 		{
 			var client = new MongoClient(_databaseSettings.ConnectionString);
 			var database = client.GetDatabase(_databaseSettings.DatabaseName);
-			_productDetailCollection = database.GetCollection<ProductDetail>(_databaseSettings.CategoryCollectionName);
+			_productDetailCollection = database.GetCollection<ProductDetail>(_databaseSettings.ProductDetailCollectionName);
 			_mapper = mapper;
 		}
 

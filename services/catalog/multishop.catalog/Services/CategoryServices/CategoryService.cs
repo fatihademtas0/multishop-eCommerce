@@ -3,7 +3,6 @@ using MongoDB.Driver;
 using multishop.catalog.Dtos.CategoryDtos;
 using multishop.catalog.entities;
 using multishop.catalog.Settings;
-using static MongoDB.Driver.WriteConcern;
 
 namespace multishop.catalog.Services.CategoryServices
 {
