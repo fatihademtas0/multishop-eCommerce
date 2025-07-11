@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using multishop.catalog.Dtos.ProductDetailDtos;
-using multishop.catalog.Services.ProductDetailService;
+using multishop.catalog.Services.ProductDetailServices;
 
 namespace multishop.catalog.Controllers
 {
