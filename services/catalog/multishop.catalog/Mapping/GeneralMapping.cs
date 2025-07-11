@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
 using multishop.catalog.Dtos.CategoryDtos;
+using multishop.catalog.Dtos.ProductDetailDtos;
+using multishop.catalog.Dtos.ProductDtos;
+using multishop.catalog.Dtos.ProductImageDtos;
 using multishop.catalog.entities;
 
 namespace multishop.catalog.Mapping
